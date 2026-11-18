@@ -304,8 +304,8 @@ nav.f{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
 .bsub b,.pocas{color:var(--sale)}
 .gcount{border-radius:0;background:rgba(30,25,21,.8)}
 .portada{margin:6px 0 10px;position:relative;overflow:hidden;width:100%;height:min(72vh,640px);min-height:380px;background:var(--piedra)}
-.portada img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85) contrast(1.03) brightness(.97)}
-.portada::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,25,21,0) 40%,rgba(30,25,21,.62) 100%)}
+.portada img{width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block}
+.portada::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,25,21,0) 50%,rgba(30,25,21,.55) 100%)}
 .portada figcaption{position:absolute;left:clamp(18px,4vw,48px);right:18px;bottom:clamp(18px,4vw,44px);z-index:1;color:#FFFFFF;display:flex;flex-direction:column;gap:8px}
 .portada figcaption .cap{letter-spacing:6px;color:#EDE3D3}
 .portada figcaption b{font-family:var(--serif);font-weight:300;font-size:clamp(30px,5vw,58px);line-height:1.02;max-width:16ch}
@@ -314,7 +314,7 @@ nav.f{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
 
 <header class="hero g"><div class="w">
   <div class="top"><button class="logo" id="logo" aria-label="Ir al inicio">CAZAOFERTAS</button><div class="topr"><span class="cap date" id="date"></span><div class="langsw" id="langsw" data-notr role="group" aria-label="Idioma / Language"><button type="button" data-l="es" aria-pressed="true">Español</button><button type="button" data-l="en" aria-pressed="false">English</button></div><button class="bagb" id="ordb" hidden>Pedidos</button><button class="bagb" id="bagb">Bolsa (0)</button></div></div>
-  <figure class="portada"><img src="portada.jpg" alt="Tienda con ropa, zapatos y bolsos en estantes de madera" fetchpriority="high"><figcaption><span class="cap">Cazaofertas</span><b>Ropa, zapatos y más de las mejores marcas</b><small>Todo en sale, directo de las tiendas oficiales</small></figcaption></figure>
+  <figure class="portada"><img src="portada.jpg" alt="Tienda de lujo con camisas, trajes y zapatos de cuero en estantes iluminados" fetchpriority="high"><figcaption><span class="cap">Cazaofertas</span><b>Ropa, zapatos y más de las mejores marcas</b><small>Todo en sale, directo de las tiendas oficiales</small></figcaption></figure>
   <h1>Las mejores marcas, <em>en sale</em></h1>
   <div class="stats" id="stats"></div>
   <div class="gen" role="group" aria-label="Para quién"><button class="gb" id="g-Hombre" data-g="Hombre" aria-pressed="true">Hombre</button><button class="gb" id="g-Mujer" data-g="Mujer" aria-pressed="false">Mujer</button><button class="gb" id="g-Unisex" data-g="Unisex" aria-pressed="false">Unisex</button></div>
